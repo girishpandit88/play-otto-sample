@@ -17,7 +17,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.network "forwarded_port", guest: 8080, host: 8080
 
-  config.vm.synced_folder "/Users/girishpandit/Documents/GitHub/play-otto-sample/target", "/vagrant"
+  config.vm.synced_folder "./target/", "/vagrant"
 
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-add-repository ppa:webupd8team/java

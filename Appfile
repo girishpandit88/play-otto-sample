@@ -1,0 +1,12 @@
+application {
+    name = "play-otto"
+    type = "custom"
+}
+
+customization "vagrant" {
+    vagrantfile = "./Vagrantfile"
+}
+
+customization "deploy" {
+    terraform = "./"
+}

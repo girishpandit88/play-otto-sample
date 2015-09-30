@@ -1,4 +1,6 @@
 This is your new Play application
 =================================
 
-This file will be packaged with your application, when using `activator dist`.
+1. Run `activator dist`. This will package the play application in the target/universal folder as a zip
+2. Run `otto dev` to run a dev instance
+3. Run `otto dev ssh` to debug dev instance
